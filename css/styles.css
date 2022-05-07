@@ -1,0 +1,251 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-clr-btn: #F5F4FA;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Шапка сайта */
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.logo-title {
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+
+.link-nav.current {
+  color: var(--accent-color)
+}
+
+.link-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+}
+
+.link-nav:hover,
+.link-nav.current:focus {
+  color: var(--accent-color);
+}
+
+.link-nav.current:active {
+  color: var(--accent-color);
+}
+
+.contact-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--primary-text-color);
+}
+
+.contact-nav:hover,
+.contact-nav:focus {
+  color: var(--accent-color);
+}
+
+/* Секция Герой */
+.hero {
+  background: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+}
+
+/* Основные задачи Веб-Студии */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-text-color)
+  }
+
+.features-text {
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+
+color: var(--primary-text-color)
+}
+
+/* Задачи Веб-Студии */
+.tasks {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--title-text-color)
+}
+
+/* Наша команда */
+.section-team {
+  background: #F5F4FA;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color)
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.team-stream {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color)
+}
+
+/* Футер */
+.footer {
+  background: #2F303A;
+}
+
+.logo-title-footer {
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: #FFFFFF;
+}
+
+.address-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #FFFFFF;
+}
+.address-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Страница Портфолио */
+
+.button-filter {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  
+  color:var(--title-text-color);
+  background-color: var(--background-clr-btn);
+}
+.button-filter:hover,
+.button-filter:focus {
+  color: #FFFFFF;
+  background-color: var(--accent-color);
+}
+.button-filter .active:active {
+  color: #FFFFFF;
+  background-color: var(--accent-color);
+}
+/* Галерея проектов */
+.cards-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color)
+}
+.cards-item {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
