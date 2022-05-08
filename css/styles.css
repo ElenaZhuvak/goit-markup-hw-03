@@ -9,13 +9,24 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   color: var(--primary-text-color);
+
+  margin: 0;
 }
 
 li {
   list-style: none;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
+  margin: 0;
+}
+p {
+  margin: 0;
 }
 /* Шапка сайта */
 .logo {
@@ -25,9 +36,12 @@ a {
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  color: var(--accent-color);
-}
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
+  color: var(--accent-color); 
+}
 .logo-title {
   font-family: 'Raleway';
   font-size: 26px;
@@ -36,12 +50,32 @@ a {
 
   color: #000000;
 }
-
-.link-nav.current {
-  color: var(--accent-color)
+.header {
+  display: flex;
+  width: 1170px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
-
+.nav-box {
+  display: flex;
+}
+.contact-box {
+  display: flex;
+  margin-left: 331px;
+}
+.navigation-links {
+  display: flex;
+  margin-left: 93px;
+}
+.navigation-links .site-nav + .site-nav {
+  margin-left: 50px;
+}
 .link-nav {
+  display: block;
+  padding: 32px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -49,7 +83,9 @@ a {
 
   color: var(--title-text-color);
 }
-
+.link-nav.current {
+  color: var(--accent-color)
+}
 .link-nav:hover,
 .link-nav.current:focus {
   color: var(--accent-color);
@@ -58,15 +94,19 @@ a {
 .link-nav.current:active {
   color: var(--accent-color);
 }
-
+.contact-box .site-contact + .site-contact {
+  margin-left: 50px;
+}
 .contact-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 
   color: var(--primary-text-color);
-}
 
+  display: block;
+  padding: 32px 0;
+}
 .contact-nav:hover,
 .contact-nav:focus {
   color: var(--accent-color);
@@ -89,6 +129,9 @@ a {
 }
 
 .button {
+  margin-left: auto;
+  margin-right: auto;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
