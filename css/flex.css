@@ -4,15 +4,12 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: 94px auto;
-    outline: 2px solid red;
 }
 .list-filter {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 54px;
-
-    outline: 1px solid red;
 }
 .list-filter .item-filter + .item-filter {
     margin-left: 8px;
@@ -29,8 +26,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 34px;
-
-    outline: 1px solid red;
 }
 .link-card {
     border: 1px solid #EEEEEE;
