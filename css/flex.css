@@ -1,48 +1,97 @@
-/* Кнопки фильтра портфолио */
-.portfolio {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 94px auto;
+    /* Страница Портфолио */
+ul {
+    margin: 0;
+    padding: 0;
 }
+
+        /* Хедер */
+.header-container {
+    border-bottom: 1px solid #ECECEC;
+}
+
+/* Кнопки фильтра портфолио */
+
+.button-filter {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+    cursor: pointer;
+
+    color: var(--title-text-color);
+    background-color: var(--background-clr-btn);
+}
+.button-filter:hover,
+.button-filter:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+}
+.button-filter .active:active {
+    color: #ffffff;
+    background-color: var(--accent-color);
+}
+
 .list-filter {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: flex-start;
     height: 54px;
+}
+.item-filter {
+    height: 38px;
+    min-width: 73px;
 }
 .list-filter .item-filter + .item-filter {
     margin-left: 8px;
 }
-.button-filter {
-    background: #F5F4FA;
-    border-radius: 4px;
-    border: none;
-    padding: 6px 22px;
+
+/* Галерея проектов */
+.cards-title {
+    margin: 20px 24px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  
+    color: var(--title-text-color);
+}
+.cards-item {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+  
+    color: var(--primary-text-color);
 }
 
-/* Портфолио */
 .cadrs-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 34px;
 }
 .link-card {
-    border: 1px solid #EEEEEE;
-}
-.cards-title {
-    margin-top: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
-}
-.cards-item {
-    margin-top: 4px;
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-bottom: 20px;
+
 }
 .item-card {
-    margin-right: 30px;
+    width: 370px;
+    height: 404px;
+    
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.cards-discription {
+    padding: 20px 24px;
+    width: 322px;
+    height: 70px;
+    text-align: start;
 }
 .item-card:nth-child(3n) {
     margin-right: 0;

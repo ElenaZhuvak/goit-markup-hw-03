@@ -16,10 +16,10 @@
 </head>
 <body>
     <!-- Шапка сайта -->
-    <header>
-        <div class="header">
+    <header class="header">
+        <div class="container header-container">
+            <a class="logo" href="./index.html">Web<span class="logo-title">Studio</span></a> 
             <nav class="nav-box">
-                <a class="logo" href="./index.html">Web<span class="logo-title">Studio</span></a> 
                 <ul class="navigation-links">
                     <li class="site-nav"><a class="link-nav current" href="./index.html">Студия</a></li>
                     <li class="site-nav"><a class="link-nav" href="./portfolio.html">Портфолио</a></li>
@@ -35,19 +35,20 @@
     </header>
 
     <main>
-    <!-- Герой -->
+    <!-- Секция Герой -->
 
-        <section class="hero">
-            <div class="hero-conteiner">
+        <section class="hero section">
+            <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="button" type="button">Заказать услугу</button>
             </div>
         </section>
 
-    <!-- Основные задачи -->
+    <!-- Секция Основные задачи -->
 
-        <section class="container">
-    <!--Заголовок для ассистивных технологий-->
+        <section class="main-features section">
+        <!--Заголовок для ассистивных технологий-->
+        <div class="container">  
             <h2 class="visually-hidden">Особенности</h2>
             <ul class="features">
                 <li class="features-item">
@@ -79,9 +80,11 @@
                     </p>
                 </li>
             </ul>
+        </div>
         </section>
-    <!-- Задачи студии -->
-        <section class="container-task">
+    <!-- Секция Задачи студии -->
+        <section class="main-task">
+        <div class="container">
             <h2 class="tasks-title">Чем мы занимаемся</h2>
             <ul class="tasks">
                 <li class="task-item">
@@ -94,36 +97,45 @@
                     <img src="./img-studio/box3.jpeg" alt="Дизайнерское офорление" width="370">
                 </li>
             </ul>
+        </div>
         </section>
         
-    <!-- Наша команда -->
-        <section class="container-team">
-            <div class="our-team">
+    <!-- Секция Наша команда -->
+        <section class="team section">
+            <div class="container">
             <h2 class="team-title">Наша команда</h2>
         
             <ul class="list-members">
                 <li class="member">
                     <img src="./img-studio/igor-dem.jpeg" alt="Фото Игоря Демьяненко" width="270">
-                    <h3 class="team-member">Игорь Демьяненко</h3>
-                    <p class="team-stream">Product Designer</p>
+                    <div class="member-discription">
+                        <h3 class="team-member">Игорь Демьяненко</h3>
+                        <p class="team-stream">Product Designer</p>
+                    </div>
                 </li>
                 
                 <li class="member">
                     <img src="./img-studio/olga-repina.jpeg" alt="Фото Ольги Репиной" width="270">
-                    <h3 class="team-member">Ольга Репина</h3>
-                    <p class="team-stream">Frontend Developer</p>
+                    <div class="member-discription">
+                        <h3 class="team-member">Ольга Репина</h3>
+                        <p class="team-stream">Frontend Developer</p>
+                    </div>
                 </li>
                 
                 <li class="member">
                     <img src="./img-studio/nikolay-tarasov.jpeg" alt="Фото Николая Тарасова" width="270">
-                    <h3 class="team-member">Николай Тарасов</h3>
-                    <p class="team-stream">Marketing</p>
+                    <div class="member-discription">
+                        <h3 class="team-member">Николай Тарасов</h3>
+                        <p class="team-stream">Marketing</p>
+                    </div>
                 </li>
                 
                 <li class="member">
                     <img src="./img-studio/mikhail-ermakov.jpeg" alt="Фото Михаила Ермакова" width="270">
-                    <h3 class="team-member">Михаил Ермаков</h3>
-                    <p class="team-stream">UI Designer</p>
+                    <div class="member-discription">
+                        <h3 class="team-member">Михаил Ермаков</h3>
+                        <p class="team-stream">UI Designer</p>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -132,7 +144,7 @@
 
 <!-- Футер -->
     <footer class="footer">
-        <div class="footer-item">
+        <div class="container">
             <div class="logotype">
                 <a class="logo-footer" href="./index.html">Web<span class="logo-title-footer">Studio</span></a> 
             </div>
