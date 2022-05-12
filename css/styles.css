@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --background-clr-btn: #f5f4fa;
+  --card-set-gap: 30px;
 }
 
 body {
@@ -15,11 +16,10 @@ body {
 
 li {
   list-style: none;
-  margin: 0;
+  margin: 0; 
 }
 ul {
-  margin: 0;
-  padding: 0;
+  margin: 0; 
 }
 a {
   text-decoration: none;
@@ -30,6 +30,8 @@ h1, h2, h3, p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Шапка сайта */
 
@@ -135,19 +137,16 @@ img {
 /* Секция Герой */
 .hero {
   background: #2f303a;
-}
-/* .hero .section {
-  text-align: center;
   height: 600px;
+  text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
-
-  outline: 1px solid white;
-} */
+}
 .hero-title {
   align-items: center;
   width: 696px;
   height: 120px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -160,8 +159,6 @@ img {
 }
 
 .button {
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 30px;
   align-items: center;
   text-align: center;
@@ -193,19 +190,19 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
-.conteiner-features {
- height: 101px;
+.main-features {
+  display: block;
 }
 .features {
   display: flex;
-  justify-content: space-between;
+
 }
 .features-item {
   width: 270px;
   height: 101px;
 }
 .features .features-item + .features-item {
-  margin-left: 30px;
+  margin-left: var(--card-set-gap);
 }
 .features-title {
   margin-bottom: 10px;
@@ -253,18 +250,6 @@ img {
 .team {
   background: #f5f4fa;
 }
-.our-team {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 94px 15px;
-  justify-content: space-around;
-
-  outline: 1px solid red;
-  
-}
 .team-title {
   margin-bottom: 50px;
   text-align: center;
@@ -283,15 +268,16 @@ img {
 }
 
 .list-members .member + .member {
-  margin-left: 30px;
+  margin-left: var(--card-set-gap);
+}
+.member {
+  background-color: #ffffff;
 }
 .member-discription {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.member {
-  background-color: #ffffff;
-}
+
 .team-member {
   text-align: center;
   margin-bottom: 10px;
@@ -321,15 +307,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-item {
-  align-items: flex-start;
-  width: 1200px;
-  padding: 60px 0px;
-  margin-left: auto;
-  margin-right: auto;
 
-  outline: 1px solid white;
-}
 .logotype {
   display: block;
   margin-bottom: 20px;
